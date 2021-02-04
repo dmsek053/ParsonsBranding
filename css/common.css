@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
+
+
+
+
+
+html,body{margin:0; font-size: 10px;}
+p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
+ul,li{list-style: none; margin:0; padding:0;}
+*{
+    box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 400;
+	color: black;
+}
+img{width:100%; vertical-align: top;}
+a{text-decoration: none;}
+
+
+/* 공통영역 */
+
+
+
+
+/* menu-trigger */
+.menu_toggle{
+	width: 60px; height:60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-trigger {
+	position: relative;
+	width: 50px;
+    height: 44px;
+	transform:scale(0.5);
+}
+.menu-trigger,
+.menu-trigger span {
+	display: inline-block;
+	box-sizing: border-box;
+}
+.menu-trigger span {
+	position: absolute;
+	left: 0;
+	width: 100%; height: 4px;
+	background-color:black;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.menu-trigger span:nth-of-type(1) {	top: 0;}
+.menu-trigger span:nth-of-type(2) {	top: 20px;}
+.menu-trigger span:nth-of-type(3) {	bottom: 0;}
+
+.menu-trigger span::before{
+	content: '';
+	position: absolute;
+	left:0; top:0;
+	width: 100%; height:100%;
+	transform:scaleX(0);
+	transform-origin: left center;
+	background: #fc3e1d;
+	border-radius: 4px;
+	transition:.4s cubic-bezier(.694,.048,.335,1);
+}
+
+/* hover */
+.menu_toggle:hover span::before{
+	transform:scaleX(1);
+	transform-origin: right center;
+}
+.menu_toggle:hover span:nth-of-type(1):before{
+	transition-delay: 0s;
+}
+.menu_toggle:hover span:nth-of-type(2):before{
+	transition: .2s .25s;
+}
+.menu_toggle:hover span:nth-of-type(3):before{
+	transition: .2s .45s;
+}
+/* menu-trigger */
+
+/* 공통영역 */

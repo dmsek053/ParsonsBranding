@@ -1,0 +1,103 @@
+@import url('/css/common.css');
+
+
+/* ----------header----------- */
+header{
+    width: 100%; margin: 0 auto; font-size: 1.6em;
+}
+header article{
+    width:93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding:1% 0;
+}
+header::after{
+    content: '';
+    border-bottom: 1px solid #201d1e;
+    width: 93%;
+    display: block;
+    margin: 0 auto;
+}
+.logo span{
+    font-weight: bold;
+}
+
+.categoreies_all{
+    display: flex;
+    align-items: center;
+}
+.categoreies_all_text{
+    margin-right: 14px;
+}
+
+.categoreies_all_icon{
+    width:26px; height:26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categoreies_all_icon_inner{
+    position: relative;
+    width: 13px; height:13px;
+}
+.categoreies_all_dot{
+    position: absolute;
+    width:3px; height:3px;
+    background: black;
+    transition: .4s;
+}
+.categoreies_all_dot:nth-of-type(1){left:0; top:0;}
+.categoreies_all_dot:nth-of-type(2){right:0; top:0;}
+.categoreies_all_dot:nth-of-type(3){bottom:0; right:0;}
+.categoreies_all_dot:nth-of-type(4){bottom:0; left:0;}
+
+.categoreies_all:hover .categoreies_all_dot:nth-of-type(1){
+    left:77%; top:0;
+    transition-delay: .1s;
+}
+.categoreies_all:hover .categoreies_all_dot:nth-of-type(2){
+    right:0; top:77%;
+    transition-delay: .15s;
+}
+.categoreies_all:hover .categoreies_all_dot:nth-of-type(3){
+    bottom:0; right:77%;
+    transition-delay: .2s;
+}
+.categoreies_all:hover .categoreies_all_dot:nth-of-type(4){
+    bottom:77%; left:0;
+}
+/* -----------header 끝--------------- */
+
+
+
+/* ----------body----------------- */
+
+
+
+/* --------main categories---------- */
+.categories_filter{
+    width: 93%; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6em;
+    padding:2% 0;
+}
+
+.categories_select_name{
+    margin-right:17px;
+}
+/* --------main categories---------- */
+
+
+
+
+/* ---------main bottom------------ */
+.main_bottom{
+    width: 93%; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
