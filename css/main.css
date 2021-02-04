@@ -76,6 +76,8 @@ header::after{
 
 
 /* ----------body----------------- */
+.main_visual{height:80vh;}
+
 /* --------main categories---------- */
 .categories_filter{
     width: 93%; margin: 0 auto;
