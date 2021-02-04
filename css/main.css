@@ -73,10 +73,9 @@ header::after{
 
 
 
+
+
 /* ----------body----------------- */
-
-
-
 /* --------main categories---------- */
 .categories_filter{
     width: 93%; margin: 0 auto;
@@ -84,13 +83,41 @@ header::after{
     justify-content: space-between;
     align-items: center;
     font-size: 1.6em;
-    padding:2% 0;
+    padding:25px 0;
 }
 
 .categories_select_name{
     margin-right:17px;
 }
 /* --------main categories---------- */
+
+
+
+
+
+
+/* ----------main cover------------- */
+.main_cover{
+    width: 100%;
+    overflow: hidden;
+}
+.main_cover div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_cover img{
+    height:480px;
+    margin:0 20px 10px 20px;
+}
+/* ----------main cover------------- */
+
+
+
+
+
+
+
 
 
 
@@ -102,3 +129,16 @@ header::after{
     justify-content: space-between;
     align-items: center;
 }
+.main_bottom_text{font-size:1.12em;}
+.main_bottom_text p{letter-spacing:1px;}
+
+.button_icon{
+    border: none;
+    background: none;
+    margin: 30px 25px;
+}
+.main_bottom_logo svg{
+    width:auto; height:8vh;
+}
+
+/* ---------main bottom------------ */
