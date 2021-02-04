@@ -76,7 +76,6 @@ header::after{
 
 
 /* ----------body----------------- */
-.main_visual{height:100vh;}
 
 /* --------main categories---------- */
 .categories_filter{
@@ -100,16 +99,16 @@ header::after{
 
 /* ----------main cover------------- */
 .main_cover{
-    width: 100%;
     overflow: hidden;
 }
 .main_cover div{
+    width: 100%; height:65vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .main_cover img{
-    height:480px;
+    width: 100%; height:100%;
     margin:0 20px 10px 20px;
 }
 /* ----------main cover------------- */
