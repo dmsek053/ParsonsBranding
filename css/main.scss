@@ -183,6 +183,7 @@ article{
 
 .main_visual{
     overflow: hidden;
+    height:70vh;
 }
 
 .main_visual_contents{
@@ -192,8 +193,10 @@ article{
     figure{
         margin: 0 40px;
         position: relative;
+        width: 30%; height:100%;
+        flex: 0 0 auto;
 
-        img{ width: 350px; }
+        img{ height: 100%;  }
         figcaption{
             position: absolute;
             right:0; top:0;
@@ -203,7 +206,7 @@ article{
 }
 // ---------------------------------main bottom
 .main_bottom{
-    @include w93_ma0; height:10vh;
+    @include w93_ma0;
     @include flex(space-between);
     margin-top: 15px;
 }

@@ -346,6 +346,7 @@ article {
 
 .main_visual {
   overflow: hidden;
+  height: 70vh;
 }
 
 .main_visual_contents {
@@ -364,10 +365,15 @@ article {
 .main_visual_contents figure {
   margin: 0 40px;
   position: relative;
+  width: 30%;
+  height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .main_visual_contents figure img {
-  width: 350px;
+  height: 100%;
 }
 
 .main_visual_contents figure figcaption {
@@ -380,7 +386,6 @@ article {
 .main_bottom {
   width: 93%;
   margin: 0 auto;
-  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
