@@ -22,7 +22,7 @@ $font42: 4.2em;
 body{background-color: rgb(212, 208, 188); transition: .5s;}
 
 // ----------------------------------------header
-header{ @include w93_ma0; height:10vh;}
+header{ @include w93_ma0;}
 article{
     @include flex(left);
     padding: 25px 0;
@@ -173,7 +173,7 @@ article{
 
 
 .filter{
-    @include w93_ma0; height:10vh;
+    @include w93_ma0;
     @include flex(space-between);
     padding: 20px 0;
 
@@ -182,7 +182,7 @@ article{
 }
 
 .main_visual{
-    overflow: hidden; height:65vh;
+    overflow: hidden;
 }
 
 .main_visual_contents{
