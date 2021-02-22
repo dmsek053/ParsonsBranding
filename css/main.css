@@ -8,6 +8,7 @@ body {
 header {
   width: 93%;
   margin: 0 auto;
+  height: 10vh;
 }
 
 article {
@@ -323,6 +324,7 @@ article {
 .filter {
   width: 93%;
   margin: 0 auto;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +348,7 @@ article {
 
 .main_visual {
   overflow: hidden;
+  height: 65vh;
 }
 
 .main_visual_contents {
@@ -380,6 +383,7 @@ article {
 .main_bottom {
   width: 93%;
   margin: 0 auto;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
