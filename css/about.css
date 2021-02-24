@@ -21,10 +21,15 @@ article {
   padding: 25px 0;
 }
 
+.logo {
+  position: fixed;
+  left: 4%;
+  top: 30px;
+}
+
 .logo span {
   font-weight: bold;
   font-size: 1.6em;
-  mix-blend-mode: difference;
   color: #dfe2e1;
 }
 
@@ -246,6 +251,221 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: relative;
+}
+
+.first_img {
+  width: 81%;
+}
+
+.first_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.second_img {
+  position: absolute;
+  bottom: -10%;
+  left: 7%;
+  width: 25%;
+}
+
+.scroll_down {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+}
+
+.about_us {
+  padding-top: 24vh;
+  padding-right: 20%;
+  padding-left: 19%;
+  padding-bottom: 20vh;
+  width: 100%;
+}
+
+.about_us .p_overtitle {
+  margin-bottom: 20px;
+}
+
+.about_us .p_overtitle p {
+  font-size: 1.12em;
+  color: #bababa;
+  letter-spacing: -.26px;
+  line-height: 1.57;
+  text-transform: uppercase;
+}
+
+.about_us .p_title p {
+  color: #bababa;
+  margin-top: 0;
+  font-size: 3.4em;
+  letter-spacing: -1px;
+  line-height: 1.43;
+}
+
+.drag_slider {
+  width: 100%;
+  height: 754px;
+}
+
+.slider_index {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.slider_index p {
+  color: #bababa;
+  font-size: 1.12em;
+  text-align: right;
+  margin-bottom: 57px;
+}
+
+.slider_grab {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider_grab img {
+  top: 0;
+  width: 1000px;
+  margin-left: 4%;
+}
+
+.slider_footer {
+  margin-top: 57px;
+}
+
+.slider_footer .slider_nav {
+  width: 93%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_footer .slider_nav button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.slider_footer .slider_nav button:nth-of-type(1) {
+  margin-right: 32px;
+}
+
+.slider_footer .slider_nav button svg {
+  width: 7px;
+  height: 12px;
+}
+
+.slider_footer .slider_nav button path {
+  fill: #fffffe;
+}
+
+.about_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 28vh;
+  padding-bottom: 29vh;
+  width: 100%;
+}
+
+.about_section .section_img {
+  width: 49.5%;
+}
+
+.about_section .section_text {
+  width: 33%;
+  margin-left: 13%;
+  position: relative;
+}
+
+.about_section .section_text .title_hold {
+  position: absolute;
+  left: -50px;
+  top: 4px;
+}
+
+.about_section .section_text .title_hold p {
+  font-size: 1.12em;
+  font-weight: bold;
+  color: white;
+}
+
+.about_section .section_text h2 {
+  color: #fffffe;
+  font-size: 4.2em;
+  letter-spacing: -1.25px;
+  line-height: 1.33;
+  font-weight: normal;
+  margin-bottom: 42px;
+}
+
+.about_section .section_text p {
+  color: #bababa;
+  font-size: 2.1em;
+  letter-spacing: -.64px;
+  line-height: 1.64;
+}
+
+.jobs_section {
+  padding-top: 10vh;
+  padding-bottom: 26vh;
+  width: 100%;
+}
+
+.jobs_section .section_text {
+  width: 73%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.jobs_section .section_text .title_hold {
+  position: absolute;
+  left: -50px;
+  top: 4px;
+}
+
+.jobs_section .section_text .title_hold p {
+  font-size: 1.12em;
+  font-weight: bold;
+  color: white;
+}
+
+.jobs_section .section_text h2 {
+  color: #fffffe;
+  font-size: 4.2em;
+  letter-spacing: -1.25px;
+  line-height: 1.33;
+  font-weight: normal;
+  margin-bottom: 42px;
+}
+
+.jobs_section .section_text p {
+  color: #bababa;
+  font-size: 2.1em;
+  letter-spacing: -.64px;
+  line-height: 1.64;
+  margin-right: 50%;
 }
 /*# sourceMappingURL=about.css.map */

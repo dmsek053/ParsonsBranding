@@ -3,12 +3,17 @@
 
 $mainColor : #201d1e;
 $beige :#dcd6d0;
+$blend :#dfe2e1;
 $red: #fc3e1d;
+$white: #fffffe;
+$about: #bababa;
 $font11: 1.12em;
 $font16: 1.6em;
+$font21: 2.1em;
 $font34: 3.4em;
 $font42: 4.2em;
-
+$font53: 5.3em;
+$journalBack: #d3caba;
 @mixin w93_ma0 {
     width:93%;
     margin: 0 auto; 
@@ -19,53 +24,19 @@ $font42: 4.2em;
     align-items: center;
 }
 
-body{background-color: rgb(212, 208, 188); transition: .5s;}
-
-// ----------------------------------------header
+body{ background-color: $journalBack; }
 header{ @include w93_ma0;}
 article{
     @include flex(left);
     padding: 25px 0;
-    border-bottom: 1px solid $mainColor;
 }
 .logo{
-    width: 45%;
+    position: fixed;
+    left:4%; top:30px;
     span{
         font-weight: bold;
         font-size: $font16;
-    }
-}
-.categories_all{
-    @include flex(center);
-
-    &:hover .icon_inner div:nth-of-type(1){left:75%; transition-delay: .2s;}
-    &:hover .icon_inner div:nth-of-type(2){top:75%; transition-delay: .1s;}
-    &:hover .icon_inner div:nth-of-type(3){right:75%; transition-delay: .1s;}
-    &:hover .icon_inner div:nth-of-type(4){bottom:75%;}
-}
-.categories_text{
-    margin-right: 14px;
-
-    span{ font-size: $font16; }
-}
-.categories_icon{
-    width: 26px; height:26px;
-    @include flex(center);
-
-
-}
-.icon_inner{
-    width: 12px; height:12px;
-    position: relative;
-
-    .all_dot{
-        width: 3px; height:3px; background: $mainColor;
-        position: absolute;
-        transition: .3s;
-        &:nth-of-type(1){top:0; left:0;}
-        &:nth-of-type(2){top:0; right:0;}
-        &:nth-of-type(3){bottom:0; right:0;}
-        &:nth-of-type(4){bottom:0; left:0;}
+        color: $mainColor
     }
 }
 //------------------ menu-toggle
@@ -84,14 +55,15 @@ article{
         transform:scale(0.5);
         display: inline-block;
         transition: all .4s;
+
         span{
             display: inline-block;
             transition: all .4s;
             position: absolute;
             left: 0;
             width: 100%; height: 4px;
-            background-color: $mainColor;
             border-radius: 4px;
+            background: $mainColor;
             
             &:nth-of-type(1){ top: 0; }
             &:nth-of-type(2){ top: 20px; }
@@ -171,59 +143,38 @@ article{
 // ---------------------------------------nav menu
 // ----------------------------------------header 끝
 
+.header_journal{
+    padding:15.5vh 0;
 
-.filter{
-    @include w93_ma0;
-    @include flex(space-between);
-    padding: 20px 0;
+    .articles_slider{
+        width: 33%;
+        margin-left: 3%; margin-right:8%;
 
-    p{font-size: $font16;}
-    span{font-size: $font16; margin-right: 17px;}
-}
-
-.main_visual{
-    overflow: hidden;
-    height:70vh;
-}
-
-.main_visual_contents{
-    @include flex(space-between);
-    height:100%;
-
-    figure{
-        margin: 0 40px;
-        position: relative;
-        width: 350px; height:100%;
-        flex: 0 0 auto;
-        
-        figcaption{
-            position: absolute;
-            right:0; top:0;
-            font-size: $font16;
+        .articles_slider_head{
+            margin-bottom: 24px;
+            p{
+                font-size: $font11;
+                letter-spacing: -.26px;
+                line-height: 1.57;
+                text-transform: uppercase;
+            }
+        }
+        .articles_slider_title{
+            margin-bottom: 50px;
+            p{
+                font-size: $font42;
+                letter-spacing: -1.2px;
+                line-height: 1.382;
+            }
+        }
+    }
+    .articles_slider_content{
+        width: 51%;
+        margin-right: 3%;
+        opacity: .5;
+        margin-bottom: 32px;
+        span{
+            font-size: $font21;
         }
     }
 }
-// ---------------------------------main bottom
-.main_bottom{
-    @include w93_ma0;
-    @include flex(space-between);
-    margin-top: 15px;
-}
-.bottom_text p{
-    font-size: 1.12em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-.categories_arrows button{
-    background: none;
-    border:none;
-    width: 40px; height:40px;
-    margin:0 15px; padding:0;
-}
-.bottom_logo{
-    width: auto; height:8vh;
-
-    svg{width: 60px; height:60px;}
-}
-// ---------------------------------main bottom

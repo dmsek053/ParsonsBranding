@@ -6,8 +6,10 @@ $beige :#dcd6d0;
 $blend :#dfe2e1;
 $red: #fc3e1d;
 $white: #fffffe;
+$about: #bababa;
 $font11: 1.12em;
 $font16: 1.6em;
+$font21: 2.1em;
 $font34: 3.4em;
 $font42: 4.2em;
 $font53: 5.3em;
@@ -29,10 +31,11 @@ article{
     padding: 25px 0;
 }
 .logo{
+    position: fixed;
+    left:4%; top:30px;
     span{
         font-weight: bold;
         font-size: $font16;
-        mix-blend-mode: difference;
         color: $blend;
     }
 }
@@ -159,5 +162,159 @@ main{width: 100%;}
 
 .about_first_section{
     display: flex;
+    justify-content: flex-end;
     position: relative;
+}
+.first_img{
+    width: 81%;
+    img{
+        width: 100%; height:100%;
+    }
+}
+.second_img{
+    position: absolute;
+    bottom:-10%; left:7%;
+    width: 25%;
+}
+.scroll_down{
+    position: absolute;
+    left:3%; top:20%;
+}
+
+.about_us{
+    padding-top: 24vh;
+    padding-right:20%;
+    padding-left:19%;
+    padding-bottom:20vh;
+    width: 100%;
+    .p_overtitle{
+        margin-bottom: 20px;
+        p{
+            font-size: $font11;
+            color: $about;
+            letter-spacing: -.26px;
+            line-height: 1.57;
+            text-transform: uppercase;
+        }
+    }
+    .p_title{
+        p{
+            color: $about;
+            margin-top:0;
+            font-size: $font34;
+            letter-spacing: -1px;
+            line-height: 1.43;
+        }
+    }
+}
+
+
+.drag_slider{
+    width:100%; height: 754px;
+}
+.slider_index{
+    @include w93_ma0;
+
+    p{
+        color:$about;
+        font-size: $font11;
+        text-align: right;
+        margin-bottom:57px;
+        
+    }
+}
+.slider_grab{
+    width: 100%; height:70%;
+    overflow: hidden;
+    display: flex;
+    img{
+        top:0;
+        width: 1000px;
+        margin-left: 4%;
+    }
+}
+.slider_footer{
+    margin-top: 57px;
+    .slider_nav{
+        @include w93_ma0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        button{
+            width: 40px; height:40px;
+            background: none;
+            border: none;
+            padding: 0;
+            &:nth-of-type(1){margin-right:32px;}
+
+            svg{
+                width: 7px; height:12px;
+            }
+            path{fill:$white;}
+        }
+    }
+}
+.about_section{
+    display: flex;
+    align-items: center;
+    padding-top: 28vh;
+    padding-bottom: 29vh;
+    width: 100%;
+    
+    .section_img{width: 49.5%;}
+    .section_text{
+        width: 33%; margin-left: 13%;
+        position: relative;
+        
+        .title_hold{
+            position: absolute; left:-50px; top:4px;
+            p{
+            font-size: $font11;
+            font-weight: bold;
+            color: white;
+            }
+        }
+        h2{
+            color: $white; font-size: $font42;
+            letter-spacing: -1.25px;
+            line-height: 1.33;
+            font-weight: normal;
+            margin-bottom: 42px;
+        }
+        p{
+            color: $about; font-size: $font21;
+            letter-spacing: -.64px;
+            line-height: 1.64;
+        }
+    }
+}
+.jobs_section{
+    padding-top: 10vh;
+    padding-bottom: 26vh;
+    width: 100%;
+    .section_text{
+        width: 73%; margin:0 auto;
+        position: relative;
+        .title_hold{
+            position: absolute; left:-50px; top:4px;
+            p{
+            font-size: $font11;
+            font-weight: bold;
+            color: white;
+            }
+        }
+        h2{
+            color: $white; font-size: $font42;
+            letter-spacing: -1.25px;
+            line-height: 1.33;
+            font-weight: normal;
+            margin-bottom: 42px;
+        }
+        p{
+            color: $about; font-size: $font21;
+            letter-spacing: -.64px;
+            line-height: 1.64;
+            margin-right: 50%;
+        }
+    }
 }
