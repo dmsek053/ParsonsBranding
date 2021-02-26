@@ -378,8 +378,9 @@ article {
 }
 
 .contact_main_container2 .contact_form_container .form_input_container {
-  margin-bottom: 6.6667vh;
+  padding: 30px 0;
   position: relative;
+  border-bottom: 1px solid #201d1e;
 }
 
 .contact_main_container2 .contact_form_container .form_input_container input {
@@ -394,7 +395,7 @@ article {
 .contact_main_container2 .contact_form_container .form_input_container label {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 30%;
   left: 0;
   width: 100%;
   opacity: .5;

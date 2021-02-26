@@ -268,8 +268,9 @@ article{
     .contact_form_container{
 
         .form_input_container{
-            margin-bottom: 6.6667vh;
+           padding: 30px 0;
             position: relative;
+            border-bottom: 1px solid $mainColor;
             
             input{
                 width: 100%;
@@ -278,12 +279,11 @@ article{
                 letter-spacing: -.64px;
                 line-height: 1.64;
                 font-size: $font25;
-
             }
             label{
                 width: 100%;
                 position: absolute;
-                top: 0;
+                top: 30%;
                 left: 0;
                 width: 100%;
                 opacity: .5;
