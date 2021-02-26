@@ -228,4 +228,176 @@ article {
   -webkit-transition: .3s;
   transition: .3s;
 }
+
+.contact {
+  width: 85%;
+  margin: 0 auto;
+  padding: 27vh 0 17.4vh;
+}
+
+.contact .contact_container h1 {
+  font-size: 5.3em;
+  line-height: 1.29;
+  letter-spacing: -1.57px;
+  font-weight: normal;
+}
+
+.contact_main {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 13vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_main_container {
+  width: 34%;
+  margin-right: 11%;
+}
+
+.contact_main_container .contact_col {
+  padding-bottom: 55px;
+  border-bottom: 1px solid #201d1e;
+}
+
+.contact_main_container .contact_col p {
+  margin-bottom: 11px;
+  letter-spacing: -.26px;
+  line-height: 1.57;
+  font-size: 1.12em;
+}
+
+.contact_main_container .contact_col a {
+  margin-bottom: 35px;
+  letter-spacing: -.7px;
+  line-height: 1.6;
+  font-size: 2.5em;
+}
+
+.contact_main_container .contact_group {
+  margin-top: 55px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #201d1e;
+}
+
+.contact_main_container .contact_group p {
+  margin-bottom: 11px;
+  letter-spacing: -.26px;
+  line-height: 1.57;
+  font-size: 1.12em;
+}
+
+.contact_main_container .contact_group a {
+  margin-bottom: 35px;
+  letter-spacing: -.7px;
+  line-height: 1.6;
+  font-size: 2.5em;
+}
+
+.contact_main_container .contact_group2 {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_main_container .contact_group2 .contact_sub-col {
+  margin-right: 50px;
+}
+
+.contact_main_container .contact_group2 .contact_sub-col p:nth-of-type(1) {
+  text-transform: uppercase;
+  letter-spacing: -.26px;
+  line-height: 1.57;
+  opacity: .5;
+  font-size: 1.12em;
+  margin-bottom: 11px;
+}
+
+.contact_main_container .contact_group2 .contact_sub-col p:nth-of-type(2) {
+  letter-spacing: -.2px;
+  line-height: 1.5625;
+  font-size: 1.6em;
+}
+
+.contact_main_container .contact_group2 .contact_sub-col .list_reset a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact_main_container .contact_group2 .contact_sub-col .list_reset a p {
+  font-size: 1.6em;
+  margin-right: 14px;
+}
+
+.contact_main_container .contact_group2 .contact_sub-col .list_reset a svg {
+  opacity: .5;
+}
+
+.contact_main_container2 {
+  width: 55%;
+}
+
+.contact_main_container2 .contact_selector {
+  margin-bottom: 65px;
+}
+
+.contact_main_container2 .contact_selector p {
+  letter-spacing: -.26px;
+  line-height: 1.57;
+  font-size: 1.12em;
+  opacity: .5;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+
+.contact_main_container2 .contact_selector .contact_selector_hold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 4px solid #201d1e;
+}
+
+.contact_main_container2 .contact_selector .contact_selector_hold h3 {
+  letter-spacing: -1px;
+  line-height: 1.43;
+  font-size: 3.4em;
+  font-weight: normal;
+}
+
+.contact_main_container2 .contact_form_container .form_input_container {
+  margin-bottom: 6.6667vh;
+  position: relative;
+}
+
+.contact_main_container2 .contact_form_container .form_input_container input {
+  width: 100%;
+  background: none;
+  border: none;
+  letter-spacing: -.64px;
+  line-height: 1.64;
+  font-size: 2.5em;
+}
+
+.contact_main_container2 .contact_form_container .form_input_container label {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .5;
+  font-size: 2.5em;
+}
 /*# sourceMappingURL=contact.css.map */

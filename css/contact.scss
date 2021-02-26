@@ -10,6 +10,7 @@ $about: #bababa;
 $font11: 1.12em;
 $font16: 1.6em;
 $font21: 2.1em;
+$font25: 2.5em;
 $font34: 3.4em;
 $font42: 4.2em;
 $font53: 5.3em;
@@ -19,6 +20,11 @@ $contactBack: rgb(161, 162, 166);
     width:93%;
     margin: 0 auto; 
 }
+@mixin w85_ma0 {
+    width:85%;
+    margin: 0 auto; 
+}
+
 @mixin flex($justify) {
     display:flex;
     justify-content: $justify;
@@ -143,3 +149,146 @@ article{
 .nav_icon svg{ transition:.3s; }
 // ---------------------------------------nav menu
 // ----------------------------------------header 끝
+
+
+.contact{
+    @include w85_ma0;
+    padding: 27vh 0 17.4vh;
+
+    .contact_container{
+        h1{
+            font-size: $font53;
+            line-height: 1.29;
+            letter-spacing: -1.57px;
+            font-weight: normal;
+        }
+    }
+}
+.contact_main{
+    @include w85_ma0;
+    margin-bottom: 13vh;
+    display: flex;
+}
+.contact_main_container{
+    width: 34%;
+    margin-right: 11%;
+    .contact_col{
+        padding-bottom: 55px;
+        border-bottom: 1px solid $mainColor;
+        p{
+            margin-bottom: 11px;
+            letter-spacing: -.26px;
+            line-height: 1.57;
+            font-size: $font11;
+        }
+        a{
+            margin-bottom: 35px;
+            letter-spacing: -.7px;
+            line-height: 1.6;
+            font-size: $font25;
+        }
+    }
+    .contact_group{
+        margin-top: 55px;
+        padding-bottom: 55px;
+        border-bottom: 1px solid $mainColor;
+        p{
+            margin-bottom: 11px;
+            letter-spacing: -.26px;
+            line-height: 1.57;
+            font-size: $font11;
+        }
+        a{
+            margin-bottom: 35px;
+            letter-spacing: -.7px;
+            line-height: 1.6;
+            font-size: $font25;
+        }
+    }
+    .contact_group2{
+        margin-top:55px;
+        display: flex;
+
+        .contact_sub-col{
+            margin-right: 50px;
+
+            p:nth-of-type(1){
+                text-transform: uppercase;
+                letter-spacing: -.26px;
+                line-height: 1.57;
+                opacity: .5;
+                font-size: $font11;
+                margin-bottom: 11px;
+            }
+            p:nth-of-type(2){
+                letter-spacing: -.2px;
+                line-height: 1.5625;
+                font-size: $font16;
+            }
+            .list_reset a{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: $font16;
+                    margin-right: 14px;
+                }
+                svg{opacity: .5;}
+            }   
+        }
+    }
+}
+.contact_main_container2{
+    width: 55%;
+
+    .contact_selector{
+        margin-bottom: 65px;
+
+        p{
+            letter-spacing: -.26px;
+            line-height: 1.57;
+            font-size: $font11;
+            opacity: .5;
+            text-transform: uppercase;
+            margin-bottom: 11px;
+        }
+        .contact_selector_hold{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 35px;
+            border-bottom: 4px solid $mainColor;
+            h3{
+                letter-spacing: -1px;
+                line-height: 1.43;
+                font-size: $font34;
+                font-weight: normal;
+            }
+        }
+    }
+    .contact_form_container{
+
+        .form_input_container{
+            margin-bottom: 6.6667vh;
+            position: relative;
+            
+            input{
+                width: 100%;
+                background: none;
+                border: none;
+                letter-spacing: -.64px;
+                line-height: 1.64;
+                font-size: $font25;
+
+            }
+            label{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                opacity: .5;
+                font-size: $font25;
+            }
+        }
+    }
+}
