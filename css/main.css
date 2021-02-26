@@ -366,14 +366,13 @@ article {
   margin: 0 40px;
   position: relative;
   width: 350px;
-  height: 100%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
 
 .main_visual_contents figure img {
-  width: 100%;
+  width: 350px;
   height: 100%;
 }
 
