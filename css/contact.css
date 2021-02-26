@@ -1,0 +1,231 @@
+@import url("common.css");
+body {
+  background-color: #a1a2a6;
+}
+
+header {
+  width: 93%;
+  margin: 0 auto;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+
+.logo {
+  position: fixed;
+  left: 4%;
+  top: 30px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #201d1e;
+}
+
+.menu_toggle {
+  position: fixed;
+  top: 39px;
+  right: 4%;
+  z-index: 99;
+  -webkit-transform: translate(18px, -50%);
+          transform: translate(18px, -50%);
+}
+
+.menu_toggle:hover .menu-trigger span::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.menu_toggle .menu-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.menu_toggle .menu-trigger span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: #201d1e;
+}
+
+.menu_toggle .menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu_toggle .menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+.menu_toggle .menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.menu_toggle .menu-trigger span::after {
+  content: '';
+  background: #fc3e1d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.menu_toggle .menu-trigger span:nth-of-type(1)::after {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.menu_toggle .menu-trigger span:nth-of-type(2)::after {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.menu_toggle .menu-trigger span:nth-of-type(3)::after {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.menu_nav {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #dcd6d0;
+  z-index: 5;
+  padding: 110px 10%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.menu_nav.active {
+  top: 0%;
+}
+
+.menu_nav .h3 {
+  width: 40%;
+  height: 95%;
+}
+
+.menu_nav .h3 h3 {
+  font-size: 3.4em;
+  color: #fc3e1d;
+  font-weight: normal;
+}
+
+.menu_list {
+  width: 55%;
+}
+
+.menu_list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px;
+  margin-bottom: 42px;
+  border-bottom: 1px solid #201d1e;
+  position: relative;
+}
+
+.menu_list li a:hover .nav_name p {
+  color: #fc3e1d;
+}
+
+.menu_list li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.menu_list li a:hover svg {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu_list li a::after {
+  content: '';
+  width: 100%;
+  height: 1.5px;
+  background: #201d1e;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_list .nav_index p {
+  font-size: 1.12em;
+}
+
+.nav_list .nav_name p {
+  font-size: 4.2em;
+  margin-left: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav_icon svg {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=contact.css.map */

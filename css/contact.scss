@@ -1,0 +1,145 @@
+@import url('common.css');
+
+
+$mainColor : #201d1e;
+$beige :#dcd6d0;
+$blend :#dfe2e1;
+$red: #fc3e1d;
+$white: #fffffe;
+$about: #bababa;
+$font11: 1.12em;
+$font16: 1.6em;
+$font21: 2.1em;
+$font34: 3.4em;
+$font42: 4.2em;
+$font53: 5.3em;
+$journalBack: #d3caba;
+$contactBack: rgb(161, 162, 166);
+@mixin w93_ma0 {
+    width:93%;
+    margin: 0 auto; 
+}
+@mixin flex($justify) {
+    display:flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+body{ background-color: $contactBack; }
+header{ @include w93_ma0;}
+article{
+    @include flex(left);
+    padding: 25px 0;
+}
+.logo{
+    position: fixed;
+    left:4%; top:30px;
+    span{
+        font-weight: bold;
+        font-size: $font16;
+        color: $mainColor
+    }
+}
+//------------------ menu-toggle
+.menu_toggle{
+    position: fixed;
+    top:39px; right:4%;
+    z-index: 99;
+    transform: translate(18px,-50%);
+
+    &:hover .menu-trigger span::after{ transform:scaleX(1); }
+
+    .menu-trigger{
+        position: relative;
+        width: 50px;
+        height: 44px;
+        transform:scale(0.5);
+        display: inline-block;
+        transition: all .4s;
+
+        span{
+            display: inline-block;
+            transition: all .4s;
+            position: absolute;
+            left: 0;
+            width: 100%; height: 4px;
+            border-radius: 4px;
+            background: $mainColor;
+            
+            &:nth-of-type(1){ top: 0; }
+            &:nth-of-type(2){ top: 20px; }
+            &:nth-of-type(3){ bottom: 0; } 
+                        
+            &::after{
+                content: '';
+                background: $red;
+                position: absolute;
+                top:0; left:0;
+                width: 100%; height:100%;
+                border-radius: 4px;
+                transform:scaleX(0);
+                transform-origin: left center;
+                transition: .2s;
+            }
+            &:nth-of-type(1)::after{transition-delay: .1s;}
+            &:nth-of-type(2)::after{transition-delay: .2s;}
+            &:nth-of-type(3)::after{transition-delay: .3s;}   
+        }
+    }
+}
+//------------------ menu-toggle
+
+// ---------------------------------------nav menu
+.menu_nav{
+    position: fixed;
+    top:-100%; left:0;
+    width: 100%; height:100%;
+    @include flex(center);
+    background: $beige;
+    z-index: 5;
+    padding: 110px 10%;
+    transition:.5s;
+    &.active{ top:0%;}
+
+    .h3{
+        width: 40%; height: 95%;
+        h3{
+            font-size: $font34;
+            color: $red;  
+            font-weight: normal;  
+        }
+    }
+}
+.menu_list{
+    width: 55%;
+    li a{
+        @include flex(space-between);
+        padding-bottom: 25px;
+        margin-bottom:42px;
+        border-bottom: 1px solid $mainColor;
+        position: relative;
+
+        &:hover .nav_name p{color: $red;}
+        &:hover::after{transform:scaleX(1);}
+        &:hover svg{transform:rotate(45deg);}
+        &::after{
+            content: '';
+            width: 100%; height:1.5px;
+            background: $mainColor;
+            position:absolute;
+            left:0; bottom:0;
+            transform-origin: left center;
+            transition: .5s;
+            transform: scaleX(0);
+        }
+    }
+}
+.nav_list{
+    @include flex(space-between);
+
+    .nav_index p{font-size: $font11;}
+    .nav_name p{font-size: $font42; margin-left: 50px; transition: .5s;}    
+}
+.nav_icon svg{ transition:.3s; }
+// ---------------------------------------nav menu
+// ----------------------------------------header 끝
